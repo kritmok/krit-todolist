@@ -26,7 +26,7 @@
           <%  items.forEach((item) => { %>
           <form action="/delete" method="post">
 
-              <li class="list-group-item"> <input type="checkbox" name="checkbox" value="<%=item.itemName%>" onChange="this.form.submit()"><%= item.itemName %></li>
+              <li class="list-group-item"> <input type="checkbox" name="checkbox" value="<%=item.itemName%>" onChange="this.form.submit()">  <%= item.itemName %></li>
 
           </form>
           <%  }) %>
