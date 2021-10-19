@@ -1,0 +1,28 @@
+html,
+body {
+  height:100%;
+  background-image: url(https://images3.alphacoders.com/555/thumb-1920-5.jpg);
+}
+
+.container {
+  height: 83%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.addNew{
+  border-radius: 0.5rem;
+  border-color: inherit;
+}
+
+footer {
+  text-align: center;
+
+
+}
+
+.card {
+  border-radius: 1rem;
+}
