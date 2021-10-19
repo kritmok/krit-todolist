@@ -2,7 +2,6 @@
 
 const express = require('express');
 const app = express();
-const port = 3000;
 
 //View engine : Set up ejs as this project's view engine
 const ejs = require('ejs');
@@ -95,6 +94,4 @@ app.post('/delete', (req, res) => {
 
 
 // Server : Connect server to the port
-app.listen(port, () => {
-  console.log("Sucessfully connected!");
-});
+app.listen(process.env.PORT || 3000)
