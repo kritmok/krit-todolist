@@ -40,14 +40,14 @@ app.get('/', (req, res) => {
       console.log(err);
     } else if(items.length === 0) {
       const newItem = new Item ({
-        itemName : "<-- Click this checkbox to delete a finished task!"
+        itemName : "<-- Click this checkbox after you have bought the item!"
       }) ;
       newItem.save( (err, newItem) => {
         if(err){
           console.log(err);
         }});
         const newItem2 = new Item ({
-          itemName : "Add a new task down below!"
+          itemName : "Add a new item down below!"
         }) ;
         newItem2.save( (err, newItem2) => {
           if(err){
